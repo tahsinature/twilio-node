@@ -1,7 +1,8 @@
 const { messages } = require("./twilio");
+const { TWILIO_PHONE_NUMBER } = require("./envManager").envVars;
 
 messages
-  .create({ body: "test msg", to: "+6281290539936", from: "+12015847382" })
+  .create({ body: "test msg", to: "+6281290539936", from: TWILIO_PHONE_NUMBER })
   .then(d => {
     console.log(d);
   })

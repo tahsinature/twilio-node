@@ -4,12 +4,14 @@ dotEnv.config();
 
 const schema = Joi.object({
   TWILIO_ACCOUNT_SID: Joi.string().required(),
-  TWILIO_AUTH_TOKEN: Joi.string().required()
+  TWILIO_AUTH_TOKEN: Joi.string().required(),
+  TWILIO_PHONE_NUMBER: Joi.string().required()
 });
 
 const envVars = {
   TWILIO_ACCOUNT_SID: process.env.TWILIO_ACCOUNT_SID,
-  TWILIO_AUTH_TOKEN: process.env.TWILIO_AUTH_TOKEN
+  TWILIO_AUTH_TOKEN: process.env.TWILIO_AUTH_TOKEN,
+  TWILIO_PHONE_NUMBER: process.env.TWILIO_PHONE_NUMBER
 };
 
 const validateEnv = () => {
