@@ -1,0 +1,21 @@
+{
+  "name": "twillio-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "dotenv-flow": "^3.1.0",
+    "twilio": "^3.39.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
